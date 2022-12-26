@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="images/icon.png">
+
+    <title>ENJOY</title>
+    <style>
+        html {
+          height:100%;
+        }
+        body {
+          margin:0;
+        }
+        .bg {
+          animation:slide 3s ease-in-out infinite alternate;
+          background-image: linear-gradient(-60deg, #03CCAC 50%, #FC486B 50%);
+        bottom:0;
+        left:-50%;
+        opacity:.5;
+        position:fixed;
+        right:-50%;
+        top:0;
+        z-index:-1;
+      }
+      .bg2 {
+      animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+.content {
+  background-color:rgba(255,255,255,.8);
+  border-radius:.25em;
+  box-shadow:0 0 .25em rgba(0,0,0,.25);
+  box-sizing:border-box;
+  left:50%;
+  padding:10vmin;
+  position:fixed;
+  text-align:center;
+  top:50%;
+  transform:translate(-50%, -50%);
+}
+
+h1 {
+  font-family:monospace;
+  font-size: 40px;
+  
+}
+a{
+  text-decoration: none;
+}
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
+}
+        .circle{
+          display: inline-flex;
+          margin-top:8%;
+        }
+        #circle{
+          background-color: white;
+          width: 400px;
+          height: 400px;
+          margin: 30px;
+          border-radius: 50%;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          background-image: linear-gradient(to bottom right, #03CCAC,white, #FC486B);
+          cursor: pointer;
+        }
+        #circle:hover{
+          width: 420px;
+          height: 420px;
+          border-radius: 50%;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          background-size: 200% 200%;
+          background-image: linear-gradient(to bottom right, #03CCAC,white, #FC486B);
+          transition: 1s;
+          animation: gradient 5s ease infinite;
+        }
+        @keyframes gradient{
+          0%{
+            background-position: 0 50%;
+          }
+          50%{
+            background-position: 100% 50%;
+          }
+          100%{
+            background-position: 0 50%;
+          }
+        }
+.shineBOX{
+  position: absolute;
+  margin: 0 550px 0 550px;
+  color: #ffffff;
+  background: linear-gradient(to right, #03CCAC 0, white 10%, #4d4d4d 20%);
+  background-position: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 600px;
+  font-size: 40px;
+  text-decoration: none;
+  white-space: nowrap;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@keyframes shine{
+  0%{
+    background-position: 0;
+  }
+  60%{
+    background-position: 350px;
+  }
+  100%{
+    background-position: 3px;
+  }
+}
+#img1{
+  width: 210px; 
+  height: 210px; 
+  margin: 25px 25px 10px 25px;
+}
+#img2{
+  width: 200px; 
+  height: 200px; 
+  margin: 25px;
+}
+@media screen and (max-width:426px) and (min-width:321px) {
+    .circle{
+      display: block;
+    }
+    .shineBOX{
+      font-size: 30px;
+      margin: 300px 150px 0 80px;
+    }
+    #circle{
+      width: 300px;
+      height: 300px;
+    }
+    #img1{
+  width: 150px; 
+  height: 150px; 
+  margin: 15px 15px 2px 15px;
+}
+#img2{
+  width: 140px; 
+  height: 140px; 
+  margin: 15px;
+}
+h1{
+  font-size: 30px;
+}
+
+}
+@media screen and (max-width:321px) {
+    .circle{
+      display: block;
+    }
+    .shineBOX{
+      font-size: 30px;
+      margin: 250px 150px 0 20px;
+    }
+    #circle{
+      width: 250px;
+      height: 250px;
+    }
+    #img1{
+  width: 150px; 
+  height: 150px; 
+  margin: 15px 15px 2px 15px;
+}
+#img2{
+  width: 140px; 
+  height: 140px; 
+  margin: 15px;
+}
+h1{
+  font-size: 30px;
+}
+
+}
+    </style>
+</head>
+<body>
+    <center><h1 class="shineBOX">ENJOY every moment</h1></center>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+
+    <center><div class="circle">
+      <div id="circle">
+        <a href="regis.html">
+          <img src="images/business.png" alt="Businessman" id="img1">
+          <h1>Business</h1>
+        </a>
+      </div>
+      <div id="circle">
+        <a href="registrationForm.html">
+          <img src="images/customer.png" alt="Costumer" id="img2">
+          <h1>Costumer</h1>
+        </a>
+      </div>
+    </div></center>
+   
+</body>
+</html>

@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image" href="images/icon.png">
+  <title>Sign UP</title>
+  <link rel="stylesheet" href="task3.css">
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="container">
+        <form name="registration">
+            
+            <label for="name">Name:</label>
+            <input type="text" name="username" id="name"><br>
+            <div id="valid1"></div>
+            <label for="surname">Surname:</label>
+            <input type="text" name="surname" id="surname"><br>
+            <div id="valid2"></div>
+            <label for="email">Email:</label>
+            <input name="useremail" type="email" id="email"><br>
+            <div id="valid3"></div>
+            <label for="phone">Phone:</label>
+            <input name="userphone" type="number" id="number"><br>
+            <div id="valid4"></div>
+            <label for="Male">Male</label>
+            <input type="radio" name="gender" id="gender" value="male">
+            <label for="Female">Female</label>
+            <input type="radio" name="gender" id="gender" value="female"><br>
+            <div id="valid5"></div>
+            <label for="password">Password</label>
+            <input name="userpassword" type="password" id="password"><br>
+            <div id="valid6"></div>
+
+
+            <button onclick="store()" type="button">Create</button>
+            <button> <a href="AccountP.html">Back</a></button>
+        </form>
+    </div>
+    <div class="conteiner1">
+        <div class="admin">
+            <h1>Admin Panel</h1>
+            <form action="">
+                <table>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td>№</td>
+                            <td>Name</td>
+                            <td>Surname</td>
+                            <td>Email(ID)</td>
+                            <td>Telephone</td>
+                            <td>Gender</td>
+                            <td></td>
+                            <td></td>
+                            
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </form>
+            <div class="buttons">
+                <button onclick="show()" id='show' type="button">Show user</button><br> 
+            </div>
+        </div>
+    </div>
+
+    <script src="task3.js"></script>
+</body>
+
+</html>

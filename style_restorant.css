@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+header ul{
+    display: flex;
+    margin: 0;
+
+}
+header ul li{
+    list-style-type: none;
+    text-align: center;
+    margin-left:10px ;
+    width: 20px;
+    font-size: 15px;
+    margin: 5px;
+}
+header ul li a{
+    text-decoration: none;
+    color:black;
+}
+header ul li a:hover{
+    color: #FC486B;
+    transition: 0.5s;
+}
+.nav1{
+    display: inline-flex;
+}
+.nav1 nav{
+    width: 100px;
+    margin: 10px 0 0 570px;
+}
+.nav1 > h1{
+    margin: 0;
+    padding: 5px;
+    width: 240px;
+    background-color: #03CCAC;
+    text-align: center;
+    color: #f1f1f1;
+    
+}
+.nav1 > h1:hover{
+    color: #FC486B;
+    transition: 1.5s;
+}
+#susu{
+    font-size: 25px;
+    cursor:pointer;
+    height: 44px;
+    width: 40px;
+    text-align: center;
+    padding-top: 4px;
+}
+#susu:hover{
+    background-color: #FC486B;
+    transition: 1.5s;
+}
+main{
+    padding: 16px;
+    margin-top: 40px;
+    transition: margin-left .5s;
+    height: 2500px;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 48px;
+    left: 0;
+    background-color: #03CCAC;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #FC486B;
+
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+form{
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0 0 10px;
+}
+.input{
+    width: 250px;
+    height: 25px;
+    border-radius: 15px;
+    padding: 5px;
+    border: 2px solid #03CCAC;
+    color: #03CCAC;
+}
+.input:hover{
+    border: 2px solid #FC486B;
+    transition: 1s;
+}
+.content img{
+    height: 600px;
+    margin: auto;
+    background-color:white;
+    border-radius: 25px;
+}
+.mySlides {display:none;}
+.contents{
+    width: 1200px;
+    margin: auto;
+    height: 2500px;
+}
+.content{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 20px;
+    height: 2300px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.text{
+  width: 800px;
+  margin: 25px auto;
+  padding: 10px 20px;
+  height: 900px;
+  font-family: 'Crimson Text', serif;
+}
+.text h1{
+    text-align: center;
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Oleo Script', cursive;
+
+}
+.text h1:hover{
+    color: #FC486B;
+    transition: 1s;
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.797), 0 6px 20px rgba(0, 0, 0, 0.671);
+}
+.address{
+    color: rgba(0, 0, 0, 0.571);
+    text-align: center;
+    font-size: 14px;
+}
+#accordion h3{
+    font-family: 'Oleo Script', cursive;
+}
+#accordion h3,#accordion i{
+    font-size: 25px;
+    color: #03CCAC;
+    cursor: pointer;
+}
+#accordion h3:hover,#accordion i:hover{
+    color: #FC486B;
+    transition: 1s;
+}
+#read{
+    text-indent: 15px;
+    text-align: justify;    
+}
+footer{
+    transition: margin-left .5s;
+    width: 1480px;
+    height: 400px;
+    display: flex;
+}
+#add{
+    width: 45%; 
+    height:400px; 
+    background-color: #03CCAC;
+}
+.contacts{
+    margin: 20px;
+    padding: 20px;
+}
+.container input[type=text],  .container select,  .container textarea, input[type=number] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  .container  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .container input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 800px;
+    margin: auto;
+  }
+#form label{
+    color: black;
+}

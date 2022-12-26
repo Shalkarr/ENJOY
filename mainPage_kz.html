@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="KZ">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image" href="images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"  href="style.css " id="stylesd">
+    
+    <title>ENJOY</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ebc661ec-8c99-42f0-89a9-141468e694df&lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                center: [43.23520945170137, 76.90966537484202],
+                zoom: 16
+            });
+            myMap.geoObjects 
+        .add(new ymaps.Placemark([43.23520945170137, 76.90966537484202], { 
+            iconCaption: 'Our location' 
+        }, { 
+            preset: 'islands#redDotIconWithCaption' 
+        })); 
+ 
+        }
+        
+    </script>
+</head>
+<body>
+    <header>
+        <div class="nav1">
+            <h1>ENJOY</h1>
+            <span onclick="openNav()" id="susu">&#9776;</span>
+            <form>
+                <input type="text" id="search-item" class="input" placeholder="Search..." onkeyup="search()">
+              </form>
+            <nav>
+                <ul>
+                    <li><a href="mainPage_ru.html">RU</a></li>
+                    <li><a href="mainPage.html">EN</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+      
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Restoran.html" target="_blank"><i class="material-icons">&#xe556;</i> Мейрамхана</a>
+        <a href="Cafe.html"><i class="material-icons">&#xe56c;</i> Кафе</a>
+        <a href="AntiC.html"><i class="material-icons">&#xe541;</i> Анти-кафе</a>
+        <a href="Club.html"><i class="material-icons">&#xe838;</i> Клуб</a>
+        <a href="Bar.html"><i class="material-icons">&#xe540;</i> Бар</a>
+      </div>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">×</a>
+        <a href="#" id="road"><i class="material-icons">zoom_in</i> Мәтінді үлкейту</a>
+        <a href="#" id="road1"><i class="material-icons">touch_app</i> Сілтемелердің астын сызу</a>
+        <a href="#" id="road2"><i class="material-icons">visibility</i> Қара режим</a>
+      </div><button class="openbtn" onclick="openNav1()"><i id="surak" class="material-icons" style="font-size:36px">&#xe914;</i></button>
+     <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <center><h1>Photos of all content:</h1></center>
+      <div class="w3-content w3-section" style="max-width:100%">
+        <img class="mySlides" src="images/1.jpg" style="width:650px;height: 500px;">
+        <img class="mySlides" src="images/2.jpg" style="width:650px;height: 500px;">
+        <img class="mySlides" src="images/3.jpg" style="width:650px;height: 500px;">
+        <img class="mySlides" src="images/4.jfif" style="width:650px;height: 500px;">
+        <img class="mySlides" src="images/5.jpg" style="width:650px;height: 500px;">
+        </div>
+    </div>
+      <main id="main">
+        <div id="color">
+        <h1>Мерекені бізбен ұмытылмаcтай өткіз.</h1>
+        <div id="flex">
+        <div class="contents" id="contents">
+            <div class="images">
+                <div class="logoA">
+                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-user-interface-line/64/account_interface_ui_ux_software_app-1024.png" alt="account">
+                    <p><b>Shalkar_Mukazhan</b><br>Zharkent</p>
+                </div>
+                <img src="images/1.jpg" alt="" id="myBtn">
+                <div class="info">
+                    <h3>Мейрамхана этикетінің 12 ережесі</h3>
+                    <p>Сонымен, сіз мейрамханаға баруды шештіңіз. Есіңізде болсын, ер адам әрқашан мекемеге бірінші болып кіреді, себебі дәл осы негізде... <a href="https://www.etiquettescholar.com/dining_etiquette/restaurant_etiquette.html">Read more</a></p>
+                </div>
+            </div>
+            <div class="images">
+                <div class="logoA">
+                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-user-interface-line/64/account_interface_ui_ux_software_app-1024.png" alt="account">
+                    <p><b>Adiletkhan_Omarbek</b><br>Shymkent</p>
+                </div>
+                <img src="images/2.jpg" alt="">
+                <div class="info">
+                    <h3>Біз ұстанатын 6 мейрамхана трюктері</h3>
+                    <p>Мейрамханалар мен кафелерде сізді тым көп жеуге және артық төлеуге мәжбүр ететін амалдар...<a href="https://mal-educat.com/formal-dinner-etiquette/">Read more</a></p>
+                </div>
+            </div>
+            <div class="images">
+                <div class="logoA">
+                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-user-interface-line/64/account_interface_ui_ux_software_app-1024.png" alt="account">
+                    <p><b>Aruzhan_Pulat</b><br>Shymkent</p>
+                </div>
+                <img src="images/3.jpg" alt="">
+                <div class="info">
+                    <h3>21 БАР, МЕЙРАМХАНА НЕМЕСЕ КАФЕНІҢ МАРКЕТИНГТІК ЕРЕКШЕЛІКТЕРІ</h3>
+                    <p>Кассалық машиналарда соңғы мәтіндік хабарламаны орнатыңыз. Келушілер жиі алады...<a href="https://adme.media/svoboda-kultura/oficianty-i-byvalye-gosti-raskryli-25-restorannyh-tryukov-o-kotoryh-obychnye-klienty-dazhe-ne-podozrevayut-2424765/">Read more</a></p>
+                </div>
+            </div>
+            <div class="images">
+                <div class="logoA">
+                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-user-interface-line/64/account_interface_ui_ux_software_app-1024.png" alt="account">
+                    <p><b>Shalkar_Mukazhan</b><br>Zharkent</p>
+                </div>
+                <img src="images/4.jfif" alt="">
+                <div class="info">
+                    <h3>Мейрамхана табысының артуы.</h3>
+                    <p>Бұл Интернеттегі ең үлкен мақала шығар...<a href="https://mal-educat.com/formal-dinner-etiquette/">Read more</a></p>
+                </div>
+            </div>
+            <div class="images">
+                <div class="logoA">
+                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-user-interface-line/64/account_interface_ui_ux_software_app-1024.png" alt="account">
+                    <p><b>Aidana_Muratbekova</b><br>Almaty</p>
+                </div>
+                <img src="http://assets.londonist.com/uploads/2014/04/galvin-la-chapelle.jpg" alt="">
+                <div class="info">
+                    <h3>SMM мейрамханасына арналған 8 Хак</h3>
+                    <p>Қазір әрбір дерлік кофеханада гамбургер мен чебуречная бар...<a href="https://mal-educat.com/formal-dinner-etiquette/">Read more</a></p>
+                </div>
+            </div>
+            <div class="images">
+                <div class="logoA">
+                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-user-interface-line/64/account_interface_ui_ux_software_app-1024.png" alt="account">
+                    <p><b>Shalkar_Mukazhan</b><br>Kazakhstan</p>
+                </div>
+                <img src="images/5.jpg" alt="">
+                <div class="info">
+                    <h3>Мейрамханадағы этикет ережелері: мінез-құлық негіздері</h3>
+                    <p>Сіз мейрамханаға баруды шештіңіз. Есіңізде болсын, ер адам әрқашан мекемеге бірінші болып кіреді, себебі дәл осы негізде жатыр...<a href="https://mal-educat.com/formal-dinner-etiquette/">Read more</a></p>
+                </div>
+            </div>
+            <div class="images">
+                <div class="logoA">
+                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-user-interface-line/64/account_interface_ui_ux_software_app-1024.png" alt="">
+                    <p><b>Shalkar_Mukazhan</b><br>Astana</p>
+                </div>
+                <img src="https://imageio.forbes.com/specials-images/imageserve/6190b333cbcd58097d047632/0x0.jpg?format=jpg&amp;width=1200&amp;fit=bounds" alt="">
+                <div class="info">
+                    <h3>Білмеу ұят болатын дресс-кодтың 6 түрі</h3>
+                    <p>Есіңізде болсын, ер адам әрқашан мекемеге бірінші болып кіреді, себебі дәл осы негізде жатыр...<a href="https://mal-educat.com/formal-dinner-etiquette/">Read more</a></p>
+                </div>
+            </div>
+            <div class="images">
+                <div class="logoA">
+                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-user-interface-line/64/account_interface_ui_ux_software_app-1024.png" alt="">
+                    <p><b>Beknur_Adilet</b><br>Kazakhstan</p>
+                </div>
+                <img src="https://thermaray.com/wp-content/uploads/2016/06/dining-5.jpg" alt="">
+                <div class="info">
+                    <h3>Мейрамхананың киім коды: сәнді көріну үшін не кию керек</h3>
+                    <p>Тіпті ең құмар сәнгер де " мейрамханаға не кию керек?"...<a href="https://mal-educat.com/formal-dinner-etiquette/">Read more</a></p>
+                </div>
+            </div>
+            <div class="images">
+                <div class="logoA">
+                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-user-interface-line/64/account_interface_ui_ux_software_app-1024.png" alt="">
+                    <p><b>Shalkar_Mukazhan</b><br>Kazakhstan</p>
+                </div>
+                <img src="https://avatars.mds.yandex.net/i?id=9d5b73c2bb186940af71ba0d03046b91-5233069-images-thumbs&n=13" alt="">
+                <div class="info">
+                    <h3>Әйел кафеде не істеу керек - 40 стильді көрініс</h3>
+                    <p>Сәйкес және орынды көріну үшін оқиға форматына байланысты кескінді таңдаңыз...<a href="https://mal-educat.com/formal-dinner-etiquette/">Read more</a></p>
+                </div>
+            </div>
+            <div class="images">
+                <div class="logoA">
+                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-user-interface-line/64/account_interface_ui_ux_software_app-1024.png" alt="">
+                    <p><b>Shalkar_Mukazhan</b><br>Kazakhstan</p>
+                </div>
+                <img src="https://zakon-img3.object.pscloud.io/1528805377_whatsapp-image-2018-06-12-at-17-58-47.jpeg" alt="https://mal-educat.com/formal-dinner-etiquette/">
+                <div class="info">
+                    <h3>Алматыдағы 10 үздік мейрамхана 2022</h3>
+                    <p>Елордадағы ең жақсы лобби залдарының бірі. Сәнді және эклектикалық дизайнда Ozen for...<a href="">Read more</a></p>
+                </div>
+            </div>
+            <div class="images">
+                <div class="logoA">
+                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-user-interface-line/64/account_interface_ui_ux_software_app-1024.png" alt="">
+                    <p><b>Shalkar_Mukazhan</b><br>Kazakhstan</p>
+                </div>
+                <img src="https://funart.pro/uploads/posts/2021-04/1618621522_22-funart_pro-p-astana-krasivie-mesta-foto-23.jpg" alt="">
+                <div class="info">
+                    <h3>Астанадағы ең әдемі 15 мейрамхана</h3>
+                    <p>Кешеннің де, мейрамхананың да стильді интерьері ең кішкентай бөлшектерге дейін ойластырылған, бұл инкарнация...<a href="">Read more</a></p>
+                </div>
+            </div>
+            <div id="a"><a href="">1</a><a href="">2</a><a href="">3</a><a href="">4</a><a href="https://mal-educat.com/formal-dinner-etiquette/">5</a></div>
+        </div>
+        <aside>
+            <div id="login"> 
+                <h1>Кіру</h1>
+                <form action="" id="form2">
+                    <input type="text" placeholder="Your email"><br>
+                    <input type="password" placeholder="password"><br>
+                    <button>Кіру</button><br>
+                    <button>Тіркелу</button>
+                </form>
+                <div class="hr">
+                    <hr>
+                    <p>немес</p>
+                    <hr>
+                </div>
+                <div class="social">
+                <a href="" class="fa fa-google"> Google</a>
+                <a href="" class="fa fa-facebook"> Facebook</a>
+                <a href="" class="fa fa-twitter"> Twitter</a>
+                <a href="" class="fa fa-instagram"> Instagram</a>
+                </div>
+                
+            </div>
+            <div id="recommend">
+                <h2>Ұсынылатын қауымдастық</h2>
+                <div id="com">
+                    <p><b>Sweety</b> | Web development <img src="images/sw.jfif" alt="Sweety" style="width: 90px; height: 80px; float: right; border-radius: 30%;"></p>
+                    <button>subscribe</button>
+                    <p id="text">Веб-сайтты немесе веб-қосымшаны құру процесі. Процестің негізгі кезеңдері-веб-дизайн, бетті орналастыру, клиент пен сервер жағында бағдарламалау және веб-серверді орнату.</p>
+                </div>
+                
+            </div>
+            <div id="tendency">
+                <h2>Tendency</h2>
+                <ul>
+                    <li><a href="">Аргентина </a> футболдан әлем чемпионы атанды.(3)</li>
+                    <li><a href="">13 жыл күткен "Аватар 2" </a> фильмі прокатқа шықты.(8)</li>
+< li                <li>студенттер қысқы сессиядан босатылды.<a href="">(2)</a></li>
+<li                 <li>Ресей және Украина<a href= "" >(13)</a></li>
+<li>                <a href="">Екібастұз</a>(6)</li>
+                </ul>
+            </div>
+            <div id="active">
+                <h2>Белсенді тақырыптар</h2>
+                <ol>
+                    <li>Short Creative Contents</li>
+                    <li><q>The crucian pecked</q></li>
+                    <li>Vladimir Zelensky</li>
+                    <li>Christmas</li>
+                    <li>New Year</li>
+                    <li>Professional holiday</li>
+                </ol>
+            </div>
+            <div id="calendar">
+                <h2>Күнтізбе</h2>
+                <div class="month">      
+                    <ul>
+                      <li class="prev">&#10094;</li>
+                      <li class="next">&#10095;</li>
+                      <li>
+                        Желтоқсан<br>
+                        <span style="font-size:18px">2022</span>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <ul class="weekdays">
+                    <li>Mo</li>
+                    <li>Tu</li>
+                    <li>We</li>
+                    <li>Th</li>
+                    <li>Fr</li>
+                    <li>Sa</li>
+                    <li>Su</li>
+                  </ul>
+                  
+                  <ul class="days">  
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li><span class="active">24</span></li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                  </ul>
+            </div>
+        </aside>
+    </div>
+</div>
+    </main>
+    <footer id="footer">
+        <div id="map" style="width: 55%; height: 400px"></div>
+        <div id="add">
+            <div class="contacts">
+            <h1>Contacts:</h1>
+            <address style="font-size: 19px;">
+                +7(777)987 98 87<br>
+                <a href="mailto:enjoy@gmail.com" style="color: #fff;">enjoy@gmail.com</a><br>
+                Manas (34/1)
+            </address>
+            <p>We are located in the city center, the nearest metro station is "Alatau". Also subscribe to us on social networks!</p>
+            <a href=""><i class="fa fa-instagram" style="font-size:28px;color:rgb(255, 255, 255)"></i></a>
+            <a href=""><i class="fa fa-telegram" style="font-size:28px;color:rgb(255, 255, 255)"></i></a>
+            <a href=""><i class="fa fa-facebook" style="font-size:28px;color:rgb(255, 255, 255)"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

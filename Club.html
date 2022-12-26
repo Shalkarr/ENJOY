@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image" href="images/icon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_restorant.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Club</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+  </script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ebc661ec-8c99-42f0-89a9-141468e694df&lang=ru_RU" type="text/javascript">
+</script>
+<script type="text/javascript">
+    ymaps.ready(init);
+    function init(){
+        var myMap = new ymaps.Map("map", {
+            center: [43.23520945170137, 76.90966537484202],
+            zoom: 16
+        });
+        myMap.geoObjects 
+    .add(new ymaps.Placemark([43.23520945170137, 76.90966537484202], { 
+        iconCaption: 'Our location' 
+    }, { 
+        preset: 'islands#redDotIconWithCaption' 
+    })); 
+
+    }
+    
+</script>
+</head>
+<body>
+    <header>
+        <div class="nav1">
+            <h1>ENJOY</h1>
+            <span onclick="openNav()" id="susu">&#9776;</span>
+        </div>
+          
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="Restoran.html" target="_blank"><i class="material-icons">&#xe556;</i> Restaurant</a>
+            <a href="Cafe.html"><i class="material-icons">&#xe56c;</i> Cafe</a>
+            <a href="AntiC.html"><i class="material-icons">&#xe541;</i> Anti-cafe</a>
+            <a href="AccountP.html"><i class="material-icons">home</i>Home</a>
+            <a href="Bar.html"><i class="material-icons">&#xe540;</i> Bar</a>
+          </div>
+    </header>
+    <main id="main">
+        <div class="contents" >
+            <div class="content" id="content" id="contents">
+                <div class="w3-content w3-section" style="max-width:100%">
+                    <img class="mySlides" src="https://static.tildacdn.com/tild3534-6333-4334-b262-343531363363/0011.jpg" style="width:100%">
+                    <img class="mySlides" src="https://avatars.mds.yandex.net/i?id=40d8ed707ec6564a7974cb5b9879e720_l-5888529-images-thumbs&n=13" style="width:100%">
+                    <img class="mySlides" src="https://yamoscow.ru/wp-content/uploads/2021/11/Antikafe-Gnezdo-1100x733.jpg" style="width:100%">
+                    <img class="mySlides" src="https://rd-robot.ru/assets/cache_image/news_img/31023thumb.jpg" style="width:100%">
+                  </div>
+                  <div class="text">
+                    <h1>Underground</h1>
+                    <p class="address">136 Shevchenko str., ug.ul. Shagabutdinova.</p>
+                    <p id="read">The celebration at the <b><q>Underground</q></b> restaurant is an extraordinary event, a celebration of a special scale dedicated to an important and significant occasion.
+                        The wedding celebration is perhaps one of the most striking examples of such holidays.<span id="dots">...</span><span id="more">
+                        This is the birth of a new family, the beginning of a new life stage, and I so want everything to be perfect on this happy day,
+                        and the celebration was held at the highest level and will forever be remembered by the newlyweds and their guests. <br>
+                        A good example is corporate celebrations - a generally accepted ceremony of business practice, as well as a great reason to have fun and relax with the whole team.</span></p><a href="#" onclick="myFunction()" id="myBtn">Read more</a>
+                    
+                          <div id="accordion">
+                        <h3><i class="material-icons">phone_in_talk</i> Phone Number</h3>
+                        <div>
+                            <dl>
+                                <dt>Manager:</dt>
+                                <dd>Altel: +77086041779</dd>
+                                <dd>Tele2: +77474569636</dd>
+                                <dd>Beeline: +77015369896</dd>
+                                <dd>Active: +77002313121</dd>
+                                <dt>For reviews: </dt>
+                                <dd>Altel: +7747569635</dd>
+                                <dd>Tele2: +7747569635</dd>
+                                <dd>Beeline: +7747569635</dd>
+                                <dd>Active: +7747569635</dd>
+                            </dl>
+                        </div>
+                        <h3><i class="material-icons">&#xe53e;</i> Average score</h3>
+                        <div>
+                          <p>
+                            5000-10000 tenge  
+                          </p>
+                        </div>
+                        <h3><i class="material-icons">&#xe7fb;</i> Number of seats</h3>
+                        <div>
+                          <p>
+                            120 seats
+                          </p>
+                        </div>
+                        <h3><i class="material-icons">&#xe3ba;</i> Advantages</h3>
+                        <div>
+                          <ul>
+                            <li><i class="material-icons">cake</i> Dance floor, karaoke, show program</li>
+                            <li><i class="material-icons">mood</i> Music: live, background, DJ</li>
+                            <li><i class="material-icons">&#xe54f;</i> Parking is free</li>
+                            <li><i class="material-icons">schedule</i> Opening hours: 16:00-02:00 (Mon–Thu, Sun); 16:00-05:00 (Fri, Sat)</li>
+                          </ul>
+                        </div>
+                      </div>
+                      
+                  </div>
+                  <div class="container" id="me">
+                    <form id="form">
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                      
+                      <label for="number">Number</label>
+                      <input type="number" id="number" name="number" placeholder="Your phone number">
+
+                      <label for="city">City</label>
+                      <select id="city" name="city">
+                        <option value="almaty">Almaty</option>
+                        <option value="astana">Astana</option>
+                        <option value="shymkent">Shymkent</option>
+                      </select>
+                  
+                      <label for="order">Ordering:</label>
+                      <textarea id="order" name="order" placeholder="Write something.." style="height:200px"></textarea>
+                  
+                      <input type="submit" value="Book" onclick="thk()">
+                    </form>
+                  </div>
+              </div>
+              
+            </div>
+        
+    </main>
+    <footer id="footer">
+        <div id="map" style="width: 55%; height: 400px"></div>
+        <div id="add">
+            <div class="contacts">
+            <h1>Contacts:</h1>
+            <address style="font-size: 19px;">
+                +7(777)987 98 87<br>
+                <a href="mailto:enjoy@gmail.com" style="color: #fff;">enjoy@gmail.com</a><br>
+                Manas (34/1)
+            </address>
+            <p>We are located in the city center, the nearest metro station is "Alatau". Also subscribe to us on social networks!</p>
+            <a href=""><i class="fa fa-instagram" style="font-size:28px;color:rgb(255, 255, 255)"></i></a>
+            <a href=""><i class="fa fa-telegram" style="font-size:28px;color:rgb(255, 255, 255)"></i></a>
+            <a href=""><i class="fa fa-facebook" style="font-size:28px;color:rgb(255, 255, 255)"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script_restoran.js"></script>
+</body>
+</html>

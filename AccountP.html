@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"  href="style.css " id="stylesd">
+    <title>ENJOY</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ebc661ec-8c99-42f0-89a9-141468e694df&lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                center: [43.23520945170137, 76.90966537484202],
+                zoom: 16
+            });
+            myMap.geoObjects 
+        .add(new ymaps.Placemark([43.23520945170137, 76.90966537484202], { 
+            iconCaption: 'Our location' 
+        }, { 
+            preset: 'islands#redDotIconWithCaption' 
+        })); 
+ 
+        }
+        
+    </script>
+</head>
+<body onload="myFunction()" style="margin:0;">
+    
+    <header>
+        <div class="nav1" class="flex-container">
+            <div id="you">
+            <h1>ENJOY</h1>
+            <span onclick="openNav()" id="susu">&#9776;</span>
+            <span onclick="openNav4()" id="susu3">&#9776;</span>
+            </div>
+            <div id="you2">
+            <form>
+                <input type="text" id="search-item" class="input" placeholder="Search..." onkeyup="search1()">
+              </form>
+            <div id="you1">
+            <nav>
+                <ul>
+                    <li><a href="mainPage_ru.html" target="_blank">RU</a></li>
+                    <li><a href="mainPage_kz.html" target="_blank">KZ</a></li>
+                </ul>
+            </nav>
+            <span id="span1"><i class="material-icons" style="font-size:31px">&#xe87e;</i></span>
+            <span  id="span2" onclick="openNav3()"><i class="material-icons" style="font-size:40px">&#xe8a6;</i></span>
+        </div>
+        </div>
+    </div>
+    </header>
+    </header>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="Restoran.html" target="_blank"><i class="material-icons">&#xe556;</i> Restaurant</a>
+        <a href="Cafe.html" target="_blank"><i class="material-icons">&#xe56c;</i> Cafe</a>
+        <a href="AntiC.html" target="_blank"><i class="material-icons">&#xe541;</i> Anti-cafe</a>
+        <a href="Club.html" target="_blank"><i class="material-icons">&#xe838;</i> Club</a>
+        <a href="Bar.html" target="_blank"><i class="material-icons">&#xe540;</i> Bar</a>
+      </div>
+      <div id="mySidenav4" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav4()">&times;</a>
+        <a href="Restoran.html" target="_blank"><i class="material-icons">&#xe556;</i> Restaurant</a>
+        <a href="Cafe.html" target="_blank"><i class="material-icons">&#xe56c;</i> Cafe</a>
+        <a href="AntiC.html" target="_blank"><i class="material-icons">&#xe541;</i> Anti-cafe</a>
+        <a href="Club.html" target="_blank"><i class="material-icons">&#xe838;</i> Club</a>
+        <a href="Bar.html" target="_blank"><i class="material-icons">&#xe540;</i> Bar</a>
+      </div>
+      <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">×</a>
+        <a href="#" id="road"><i class="material-icons">zoom_in</i> Enlarge text</a>
+        <a href="#" id="road1"><i class="material-icons">touch_app</i> Underlining links</a>
+        <a href="#" id="road2"><i class="material-icons">visibility</i> Shade of gray</a>
+      </div><button class="openbtn" onclick="openNav1()"><i id="surak" class="material-icons" style="font-size:34px">&#xe914;</i></button>
+
+
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav3()">&times;</a>
+        <div class="overlay-content">
+          <a href="admin.html"><i class="material-icons">account_circle</i> Personal datas</a>
+          <a href="admin.html"><i class="material-icons">settings</i> Settings</a>
+        </div>
+      </div>
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <center><h1>Photos of all content:</h1></center>
+      <div class="w3-content w3-section" style="max-width:100%">
+        <img class="mySlides" src="images/1.jpg" style="width:650px;height: 500px;">
+        <img class="mySlides" src="images/2.jpg" style="width:650px;height: 500px;">
+        <img class="mySlides" src="images/3.jpg" style="width:650px;height: 500px;">
+        <img class="mySlides" src="images/4.jfif" style="width:650px;height: 500px;">
+        <img class="mySlides" src="images/5.jpg" style="width:650px;height: 500px;">
+        </div>
+    </div>
+  
+  </div>
+    <main id="main">
+        <div id="color">
+        <h1>Spend an unforgettable holiday with us.</h1>
+        <div id="flex">
+        <div class="contents" id="contents">
+            <div class="images2">
+                <div class="logoA">
+                    <img  src="https://cdn2.iconfinder.com/data/icons/minimal-user-interface-line/64/account_interface_ui_ux_software_app-1024.png" alt="account">
+                    <p><b>Shalkar_Mukazhan</b><br>Zharkent</p>
+                </div>
+                <img id="myBtn" src="images/1.jpg" alt="" onmouseover="mOver(this)" onmouseout="mOut(this)" style="cursor: pointer;">
+                <div class="info">
+                    <h3>12 rules of restaurant etiquette</h3>
+                    <p>So, you decided to go to a restaurant. Remember that a man always enters the institution first, the reason is on this basis... <a href="">Read more</a></p>
+                </div>
+                <div id="head">
+                    <div class="for">
+                        <form id="task-form">
+                            <input type="text" name="task-input" id="new-task-input" placeholder="Write your comment..." />
+                            <input type="submit"id="new-task-submit" value="Add" />
+                        </form>
+                        </div>
+                </div>
+                <div id="body">
+                    <section class="task-list">
+                        <h6>Comments:</h6>
+                        <div id="tasks">
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="images2">
+                <div class="logoA">
+                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-user-interface-line/64/account_interface_ui_ux_software_app-1024.png" alt="account">
+                    <p><b>Adiletkhan_Omarbek</b><br>Shymkent</p>
+                </div>
+                <img src="images/2.jpg" alt=""  onmouseover="mOver(this)" onmouseout="mOut(this)">
+                <div class="info">
+                    <h3>6 tricks of restaurants that we fall for</h3>
+                    <p>Tricks that are used in restaurants and cafes to make you eat too much and overpay...<a href="https://mal-educat.com/formal-dinner-etiquette/">Read more</a></p>
+                </div>
+                <div id="head">
+                    <div class="for">
+                        <form id="task-form">
+                            <input type="text" name="task-input" id="new-task-input" placeholder="Write your comment..." />
+                            <input type="submit"id="new-task-submit" value="Add" />
+                        </form>
+                        </div>
+                </div>
+                <div id="body">
+                    <section class="task-list">
+                        <h6>Comments:</h6>
+                        <div id="tasks">
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="images2">
+                <div class="logoA">
+                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-user-interface-line/64/account_interface_ui_ux_software_app-1024.png" alt="account">
+                    <p><b>Aruzhan_Pulat</b><br>Shymkent</p>
+                </div>
+                <img src="images/3.jpg" alt=""  onmouseover="mOver(this)" onmouseout="mOut(this)">
+                <div class="info">
+                    <h3>21 MARKETING FEATURES OF A BAR, RESTAURANT OR CAFE</h3>
+                    <p>Set up a final text message on your cash registers. Visitors often take...<a href="https://mal-educat.com/formal-dinner-etiquette/">Read more</a></p>
+                </div>
+                <div id="head">
+                    <div class="for">
+                        <form id="task-form">
+                            <input type="text" name="task-input" id="new-task-input" placeholder="Write your comment..." />
+                            <input type="submit"id="new-task-submit" value="Add" />
+                        </form>
+                        </div>
+                </div>
+                <div id="body">
+                    <section class="task-list">
+                        <h6>Comments:</h6>
+                        <div id="tasks">
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="images2">
+                <div class="logoA">
+                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-user-interface-line/64/account_interface_ui_ux_software_app-1024.png" alt="account">
+                    <p><b>Shalkar_Mukazhan</b><br>Zharkent</p>
+                </div>
+                <img src="images/4.jfif" alt=""  onmouseover="mOver(this)" onmouseout="mOut(this)">
+                <div class="info">
+                    <h3>Increase in restaurant revenue.</h3>
+                    <p>This is probably the biggest piece of this kind on the internet...<a href="https://mal-educat.com/formal-dinner-etiquette/">Read more</a></p>
+                </div>
+                <div id="head">
+                    <div class="for">
+                        <form id="task-form">
+                            <input type="text" name="task-input" id="new-task-input" placeholder="Write your comment..." />
+                            <input type="submit"id="new-task-submit" value="Add" />
+                        </form>
+                        </div>
+                </div>
+                <div id="body">
+                    <section class="task-list">
+                        <h6>Comments:</h6>
+                        <div id="tasks">
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="images2">
+                <div class="logoA">
+                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-user-interface-line/64/account_interface_ui_ux_software_app-1024.png" alt="account">
+                    <p><b>Aidana_Muratbekova</b><br>Almaty</p>
+                </div>
+                <img src="http://assets.londonist.com/uploads/2014/04/galvin-la-chapelle.jpg" alt=""  onmouseover="mOver(this)" onmouseout="mOut(this)">
+                <div class="info">
+                    <h3>8 life hacks for restaurant SMM</h3>
+                    <p>Now almost every coffee shop, burger and cheburechnaya...<a href="https://mal-educat.com/formal-dinner-etiquette/">Read more</a></p>
+                </div>
+                <div id="head">
+                    <div class="for">
+                        <form id="task-form">
+                            <input type="text" name="task-input" id="new-task-input" placeholder="Write your comment..." />
+                            <input type="submit"id="new-task-submit" value="Add" />
+                        </form>
+                        </div>
+                </div>
+                <div id="body">
+                    <section class="task-list">
+                        <h6>Comments:</h6>
+                        <div id="tasks">
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="images2">
+                <div class="logoA">
+                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-user-interface-line/64/account_interface_ui_ux_software_app-1024.png" alt="account">
+                    <p><b>Shalkar_Mukazhan</b><br>Kazakhstan</p>
+                </div>
+                <img src="images/5.jpg" alt=""  onmouseover="mOver(this)" onmouseout="mOut(this)">
+                <div class="info">
+                    <h3>Rules of etiquette in a restaurant: the basics of behavior</h3>
+                    <p>You decided to go to a restaurant. Remember that a man always enters the institution first, the reason is on this basis...<a href="">Read more</a></p>
+                </div>
+                <div id="head">
+                    <div class="for">
+                        <form id="task-form">
+                            <input type="text" name="task-input" id="new-task-input" placeholder="Write your comment..." />
+                            <input type="submit"id="new-task-submit" value="Add" />
+                        </form>
+                        </div>
+                </div>
+                <div id="body">
+                    <section class="task-list">
+                        <h6>Comments:</h6>
+                        <div id="tasks">
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="images2">
+                <div class="logoA">
+                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-user-interface-line/64/account_interface_ui_ux_software_app-1024.png" alt="">
+                    <p><b>Shalkar_Mukazhan</b><br>Astana</p>
+                </div>
+                <img  onmouseover="mOver(this)" onmouseout="mOut(this)" src="https://imageio.forbes.com/specials-images/imageserve/6190b333cbcd58097d047632/0x0.jpg?format=jpg&amp;width=1200&amp;fit=bounds" alt="">
+                <div class="info">
+                    <h3>6 types of dress code that it's a shame not to know</h3>
+                    <p>Remember that a man always enters the institution first, the reason is on this basis...<a href="https://mal-educat.com/formal-dinner-etiquette/">Read more</a></p>
+                </div>
+                <div id="head">
+                    <div class="for">
+                        <form id="task-form">
+                            <input type="text" name="task-input" id="new-task-input" placeholder="Write your comment..." />
+                            <input type="submit"id="new-task-submit" value="Add" />
+                        </form>
+                        </div>
+                </div>
+                <div id="body">
+                    <section class="task-list">
+                        <h6>Comments:</h6>
+                        <div id="tasks">
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="images2">
+                <div class="logoA">
+                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-user-interface-line/64/account_interface_ui_ux_software_app-1024.png" alt="">
+                    <p><b>Beknur_Adilet</b><br>Kazakhstan</p>
+                </div>
+                <img src="https://thermaray.com/wp-content/uploads/2016/06/dining-5.jpg" alt=""  onmouseover="mOver(this)" onmouseout="mOut(this)">
+                <div class="info">
+                    <h3>Restaurant dress code: what to wear to look luxurious</h3>
+                    <p>Even the most avid fashionista will ask the question "what to wear to a restaurant?...<a href="https://mal-educat.com/formal-dinner-etiquette/">Read more</a></p>
+                </div>
+                <div id="head">
+                    <div class="for">
+                        <form id="task-form">
+                            <input type="text" name="task-input" id="new-task-input" placeholder="Write your comment..." />
+                            <input type="submit"id="new-task-submit" value="Add" />
+                        </form>
+                        </div>
+                </div>
+                <div id="body">
+                    <section class="task-list">
+                        <h6>Comments:</h6>
+                        <div id="tasks">
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="images2">
+                <div class="logoA">
+                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-user-interface-line/64/account_interface_ui_ux_software_app-1024.png" alt="">
+                    <p><b>Shalkar_Mukazhan</b><br>Kazakhstan</p>
+                </div>
+                <img src="https://avatars.mds.yandex.net/i?id=9d5b73c2bb186940af71ba0d03046b91-5233069-images-thumbs&n=13" alt=""  onmouseover="mOver(this)" onmouseout="mOut(this)">
+                <div class="info">
+                    <h3>What to go to a cafe for a woman — 40 stylish images</h3>
+                    <p>To look appropriate and relevant, choose an image depending on the format of the event...<a href="https://mal-educat.com/formal-dinner-etiquette/">Read more</a></p>
+                </div>
+                <div id="head">
+                    <div class="for">
+                        <form id="task-form">
+                            <input type="text" name="task-input" id="new-task-input" placeholder="Write your comment..." />
+                            <input type="submit"id="new-task-submit" value="Add" />
+                        </form>
+                        </div>
+                </div>
+                <div id="body">
+                    <section class="task-list">
+                        <h6>Comments:</h6>
+                        <div id="tasks">
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="images2">
+                <div class="logoA">
+                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-user-interface-line/64/account_interface_ui_ux_software_app-1024.png" alt="">
+                    <p><b>Shalkar_Mukazhan</b><br>Kazakhstan</p>
+                </div>
+                <img src="https://zakon-img3.object.pscloud.io/1528805377_whatsapp-image-2018-06-12-at-17-58-47.jpeg" alt=""  onmouseover="mOver(this)" onmouseout="mOut(this)">
+                <div class="info">
+                    <h3>10 Best restaurants in Almaty 2022</h3>
+                    <p>One of the best lobby lounge in the capital. In a stylish and eclectic design, Ozen for...<a href="https://mal-educat.com/formal-dinner-etiquette/">Read more</a></p>
+                </div>
+                <div id="head">
+                    <div class="for">
+                        <form id="task-form">
+                            <input type="text" name="task-input" id="new-task-input" placeholder="Write your comment..." />
+                            <input type="submit"id="new-task-submit" value="Add" />
+                        </form>
+                        </div>
+                </div>
+                <div id="body">
+                    <section class="task-list">
+                        <h6>Comments:</h6>
+                        <div id="tasks">
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="images2">
+                <div class="logoA">
+                    <img src="https://cdn2.iconfinder.com/data/icons/minimal-user-interface-line/64/account_interface_ui_ux_software_app-1024.png" alt="">
+                    <p><b>Shalkar_Mukazhan</b><br>Kazakhstan</p>
+                </div>
+                <img src="https://funart.pro/uploads/posts/2021-04/1618621522_22-funart_pro-p-astana-krasivie-mesta-foto-23.jpg" alt="" onmouseover="mOver(this)" onmouseout="mOut(this)">
+                <div class="info">
+                    <h3>15 most beautiful restaurants in Astana</h3>
+                    <p>The stylish interior of both the complex and the restaurant is thought out to the smallest detail, this is the embodiment...<a href="">Read more</a></p>
+                </div>
+                <div id="head">
+                    <div class="for">
+                        <form id="task-form">
+                            <input type="text" name="task-input" id="new-task-input" placeholder="Write your comment..." />
+                            <input type="submit"id="new-task-submit" value="Add" />
+                        </form>
+                        </div>
+                </div>
+                <div id="body">
+                    <section class="task-list">
+                        <h6>Comments:</h6>
+                        <div id="tasks">
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div id="a"><a href="">1</a><a href="">2</a><a href="">3</a><a href="">4</a><a href="">5</a></div>
+        </div>
+        <aside>
+            <div id="recommend">
+                <h2>Recommended community</h2>
+                <div id="com">
+                    <p><b>Sweety</b> | Web development <img src="images/sw.jfif" alt="Sweety" style="width: 90px; height: 80px; float: right; border-radius: 30%;"></p>
+                    <button>subscribe</button>
+                    <p id="text">The process of creating a website or web application. The main stages of the process are web design, page layout, client-side and server-side programming, as well as web server configuration.</p>
+                </div>
+                
+            </div>
+            <div id="tendency">
+                <h2>Tendency</h2>
+                <ul>
+                    <li><a href="">Argentina</a> became the world champion in football. (3)</li>
+                    <li><a href="">Avatar 2</a> filmi, which has been waiting for 13 years, has been released.(8)</li>
+                    <li>Students were exempted from the winter session.<a href="">(2)</a></li>
+                    <li>Russia and Ukraine<a href="">(13)</a></li>
+                    <li><a href="">Ekibastuz</a>(6)</li>
+                </ul>
+            </div>
+            <div id="active">
+                <h2>Active topics</h2>
+                <ol>
+                    <li>Short Creative Contents</li>
+                    <li><q>The crucian pecked</q></li>
+                    <li>Vladimir Zelensky</li>
+                    <li>Christmas</li>
+                    <li>New Year</li>
+                    <li>Professional holiday</li>
+                </ol>
+            </div>
+            <div id="calendar">
+                <h2>Calendar</h2>
+                <div class="month">      
+                    <ul>
+                      <li class="prev">&#10094;</li>
+                      <li class="next">&#10095;</li>
+                      <li>
+                        December<br>
+                        <span style="font-size:18px">2022</span>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <ul class="weekdays">
+                    <li>Mo</li>
+                    <li>Tu</li>
+                    <li>We</li>
+                    <li>Th</li>
+                    <li>Fr</li>
+                    <li>Sa</li>
+                    <li>Su</li>
+                  </ul>
+                  
+                  <ul class="days">  
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li><span class="active">24</span></li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li>29</li>
+                    <li>30</li>
+                    <li>31</li>
+                  </ul>
+            </div>
+        </aside>
+    </div>
+</div>
+    </main>
+    <footer id="footer">
+        <div id="map"></div>
+        <div id="add">
+            <div class="contacts">
+            <h1>Contacts:</h1>
+            <address>
+                +7(777)987 98 87<br>
+                <a href="mailto:enjoy@gmail.com" style="color: #fff;">enjoy@gmail.com</a><br>
+                Manas (34/1)
+            </address>
+            <p>We are located in the city center, the nearest metro station is "Alatau". Also subscribe to us on social networks!</p>
+            <a href=""><i class="fa fa-instagram" style="font-size:28px;color:rgb(255, 255, 255)"></i></a>
+            <a href=""><i class="fa fa-telegram" style="font-size:28px;color:rgb(255, 255, 255)"></i></a>
+            <a href=""><i class="fa fa-facebook" style="font-size:28px;color:rgb(255, 255, 255)"></i></a>
+            </div>
+        </div>
+    </footer>
+</div>
+<div id="loader"></div>
+    <script src="script.js"></script>
+</body>
+</html>
